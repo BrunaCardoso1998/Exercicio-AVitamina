@@ -1,0 +1,57 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+
+}
+
+footer,
+header,
+nav,
+section,
+main {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+input {
+    --webkit-appearance: none;
+    border-radius: 0;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-prev:focus,
+.swiper-button-prev:active,
+.swiper-button-next:hover,
+.swiper-button-next:focus,
+.swiper-button-next:active,
+.swiper-prev:hover,
+.swiper-prev:focus,
+.swiper-prev:active,
+.swiper-next:hover,
+.swiper-next:focus,
+.swiper-next:active {
+    color: inherit !important;
+    text-decoration: none !important;
+    outline: none !important;
+}

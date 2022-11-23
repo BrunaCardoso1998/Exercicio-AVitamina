@@ -1,0 +1,172 @@
+/*Fonts*/
+$primary-font: 'Montserrat', sans-serif;
+
+
+/*Colors*/
+$white: #ffffff !default;
+$dark-gray: #333D47 !default;
+
+$main-color: #333D47 !default;
+$second-color: #DE1E40 !default;
+
+$light-gray: #f7f7f7 !default;
+$medium-gray: #eeeeee !default;
+$dark-gray: #333D47 !default;
+
+.white {
+    color: $white;
+}
+
+.black {
+    color: $dark-gray;
+}
+
+.second-color {
+    color: $second-color;
+}
+
+/*General Styles*/
+
+.container-fluid {
+    padding: 0 !important;
+    margin: 0;
+}
+
+.w-100 {
+    min-width: 100%;
+    width: 100%;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0;
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+
+/*Text Styles*/
+
+body {
+    font-family: $primary-font;
+}
+
+h1 {
+    font-family: $primary-font;
+    font-size: 60px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 70px;
+    color: $white;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: $primary-font;
+    font-size: 32px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    color: $main-color;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: $primary-font;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $main-color;
+    letter-spacing: 0.2px;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-family: $primary-font;
+    font-size: 58px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: normal;
+    color: $main-color;
+}
+
+h5 {
+    font-family: $primary-font;
+    font-size: 30px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: $main-color;
+    text-transform: uppercase;
+}
+
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: $main-color;
+}
+
+a {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: $main-color;
+    text-decoration: none;
+}
+
+a:hover{
+    color: $second-color;
+    transition: 0.2s;
+}
+
+/*Breakpoints & Media Query*/
+
+$breakpoint-laptop: 1024px;
+$breakpoint-tablet: 786px;
+$breakpoint-mobile: 576px;
+
+@media only screen and (max-width: $breakpoint-laptop) {
+    h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
